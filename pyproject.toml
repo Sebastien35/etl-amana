@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "etl_amana"
+version = "0.1.0"
+dependencies = [
+  "pymysql",
+  "pandas",
+  "matplotlib",
+  "seaborn",
+  "IPython",
+  "ipykernel",
+  "pydantic"]
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+  "pytest",
+  "ruff",
+]
