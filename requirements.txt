@@ -22,6 +22,8 @@ executing==2.2.1
     # via stack-data
 fonttools==4.60.1
     # via matplotlib
+greenlet==3.2.4
+    # via sqlalchemy
 ipykernel==7.1.0
     # via etl_amana (pyproject.toml)
 ipython==9.6.0
@@ -88,8 +90,6 @@ pygments==2.19.2
     # via
     #   ipython
     #   ipython-pygments-lexers
-pymysql==1.1.2
-    # via etl_amana (pyproject.toml)
 pyparsing==3.2.5
     # via matplotlib
 python-dateutil==2.9.0.post0
@@ -107,6 +107,8 @@ seaborn==0.13.2
     # via etl_amana (pyproject.toml)
 six==1.17.0
     # via python-dateutil
+sqlalchemy==2.0.44
+    # via etl_amana (pyproject.toml)
 stack-data==0.6.3
     # via ipython
 tornado==6.5.2
@@ -124,6 +126,7 @@ typing-extensions==4.15.0
     # via
     #   pydantic
     #   pydantic-core
+    #   sqlalchemy
     #   typing-inspection
 typing-inspection==0.4.2
     # via pydantic

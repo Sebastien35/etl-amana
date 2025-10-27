@@ -54,3 +54,10 @@ class DBConnector:
         if self.connection:
             self.connection.close()
             self.connection = None
+
+    def __enter__(self):
+        self.connect()
+        return self
+    
+    def __exit__(self, exc_type, exc_value, traceback):       
+        self.close()

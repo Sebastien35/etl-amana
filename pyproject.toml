@@ -6,13 +6,14 @@ build-backend = "hatchling.build"
 name = "etl_amana"
 version = "0.1.0"
 dependencies = [
-  "pymysql",
+  "sqlalchemy",
   "pandas",
   "matplotlib",
   "seaborn",
   "IPython",
   "ipykernel",
-  "pydantic"]
+  "pydantic"
+  ]
 
 [project.optional-dependencies]
 dev = [

@@ -28,6 +28,8 @@ filelock==3.20.0
     # via virtualenv
 fonttools==4.60.1
     # via matplotlib
+greenlet==3.2.4
+    # via sqlalchemy
 identify==2.6.15
     # via pre-commit
 iniconfig==2.3.0
@@ -108,8 +110,6 @@ pygments==2.19.2
     #   ipython
     #   ipython-pygments-lexers
     #   pytest
-pymysql==1.1.2
-    # via etl_amana (pyproject.toml)
 pyparsing==3.2.5
     # via matplotlib
 pytest==8.4.2
@@ -133,6 +133,8 @@ seaborn==0.13.2
     # via etl_amana (pyproject.toml)
 six==1.17.0
     # via python-dateutil
+sqlalchemy==2.0.44
+    # via etl_amana (pyproject.toml)
 stack-data==0.6.3
     # via ipython
 tornado==6.5.2
@@ -150,6 +152,7 @@ typing-extensions==4.15.0
     # via
     #   pydantic
     #   pydantic-core
+    #   sqlalchemy
     #   typing-inspection
 typing-inspection==0.4.2
     # via pydantic
