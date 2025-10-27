@@ -1,0 +1,7 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-ruff
+    rev: main
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+        files: \.py$

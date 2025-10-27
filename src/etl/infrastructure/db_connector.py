@@ -1,11 +1,11 @@
 import pymysql
 
 DB_CREDS = {
-    "dbname": "etl_class",
-    "user": "user",       
-    "password": "password",
-    "host": "localhost",    
-    "port": 3307       
+    "host": "localhost",
+    "user": "myuser",
+    "password": "mypassword",
+    "dbname": "mydatabase",
+    "port": 5432      
 }
 
 class DBConnector:

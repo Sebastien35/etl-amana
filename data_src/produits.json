@@ -1,0 +1,122 @@
+[
+    {
+        "id_produit": 1,
+        "libelle": "Produit 1",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 10.0
+    },
+    {
+        "id_produit": 2,
+        "libelle": "Produit 2",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 12.5
+    },
+    {
+        "id_produit": 3,
+        "libelle": "Produit 3",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 15.0
+    },
+    {
+        "id_produit": 4,
+        "libelle": "Produit 4",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 17.5
+    },
+    {
+        "id_produit": 5,
+        "libelle": "Produit 5",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 20.0
+    },
+    {
+        "id_produit": 6,
+        "libelle": "Produit 6",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 22.5
+    },
+    {
+        "id_produit": 7,
+        "libelle": "Produit 7",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 25.0
+    },
+    {
+        "id_produit": 8,
+        "libelle": "Produit 8",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 27.5
+    },
+    {
+        "id_produit": 9,
+        "libelle": "Produit 9",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 30.0
+    },
+    {
+        "id_produit": 10,
+        "libelle": "Produit 10",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 32.5
+    },
+    {
+        "id_produit": 11,
+        "libelle": "Produit 11",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 35.0
+    },
+    {
+        "id_produit": 12,
+        "libelle": "Produit 12",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 37.5
+    },
+    {
+        "id_produit": 13,
+        "libelle": "Produit 13",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 40.0
+    },
+    {
+        "id_produit": 14,
+        "libelle": "Produit 14",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 42.5
+    },
+    {
+        "id_produit": 15,
+        "libelle": "Produit 15",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 45.0
+    },
+    {
+        "id_produit": 16,
+        "libelle": "Produit 16",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 47.5
+    },
+    {
+        "id_produit": 17,
+        "libelle": "Produit 17",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 50.0
+    },
+    {
+        "id_produit": 18,
+        "libelle": "Produit 18",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 52.5
+    },
+    {
+        "id_produit": 19,
+        "libelle": "Produit 19",
+        "categorie": "Cat\u00e9gorie A",
+        "prix": 55.0
+    },
+    {
+        "id_produit": 20,
+        "libelle": "Produit 20",
+        "categorie": "Cat\u00e9gorie B",
+        "prix": 57.5
+    }
+]

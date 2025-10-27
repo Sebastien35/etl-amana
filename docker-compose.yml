@@ -1,18 +1,40 @@
+
 services:
-  db:
-    image: postgres:13
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydatabase
+
+  postgres_db:
+    image: postgres
+    restart: always
     ports:
-      - "5432:5432"
-  adminer:
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@example.com
-      PGADMIN_DEFAULT_PASSWORD: admin 
+      - 5432:5432/tcp
+    environment: 
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - POSTGRES_DB=mydatabase
+    volumes:
+      - ./data:/var/lib/postgresql/data 
+    networks:
+      - db_network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: always
     ports:
-      - "8080:80"
-    depends_on:
-      - db
+      - 8001:8080/tcp
+    environment: 
+      - PGADMIN_LISTEN_ADDRESS=0.0.0.0
+      - PGADMIN_LISTEN_PORT=8080
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    networks:
+      - db_network
+    # ADD THIS LINE, TO BE ABLE TO LOGIN
+    tty: true
+    depends_on: # <-- !!!!!
+      - postgres_db # <-- !!!!!
+    links: # <-- !!!!!
+      - postgres_db # <-- !!!!!
+
+networks:
+  db_network:
+    driver: bridge
