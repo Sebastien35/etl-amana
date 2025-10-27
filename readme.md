@@ -2,11 +2,28 @@
 
 ## Requirements:
 - Make
-- python 3
+- python3
+- docker
 
 
 ## Run:
+### with make:
 ```
 make install-all
 ```
 To install project dependencies. The notebooks live in src/etl/notebooks
+```
+make run
+```
+To start docker containers (db & pgadmin)
+
+### without make
+
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+
+docker compose up -d
+```
