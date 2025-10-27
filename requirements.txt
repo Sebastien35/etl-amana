@@ -78,6 +78,8 @@ prompt-toolkit==3.0.52
     # via ipython
 psutil==7.1.2
     # via ipykernel
+psycopg==3.2.12
+    # via etl_amana (pyproject.toml)
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.3
@@ -90,6 +92,8 @@ pygments==2.19.2
     # via
     #   ipython
     #   ipython-pygments-lexers
+pymysql==1.1.2
+    # via etl_amana (pyproject.toml)
 pyparsing==3.2.5
     # via matplotlib
 python-dateutil==2.9.0.post0
@@ -124,6 +128,7 @@ traitlets==5.14.3
     #   matplotlib-inline
 typing-extensions==4.15.0
     # via
+    #   psycopg
     #   pydantic
     #   pydantic-core
     #   sqlalchemy

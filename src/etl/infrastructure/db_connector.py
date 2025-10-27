@@ -1,30 +1,29 @@
-import pymysql
+import sqlalchemy
 
 DB_CREDS = {
     "host": "localhost",
-    "user": "myuser",
-    "password": "mypassword",
+    "user": "user",
+    "password": "password",
     "dbname": "mydatabase",
-    "port": 5432      
+    "port": 5432,
 }
+
 
 class DBConnector:
     def __init__(self, db_creds=DB_CREDS):
         self.db_creds = db_creds
         self.connection = None
 
+    
     def connect(self):
-        """Establishes or reuses the MySQL connection."""
-        if not self.connection or not self.connection.open:
-            self.connection = pymysql.connect(
-                host=self.db_creds["host"],
-                user=self.db_creds["user"],
-                password=self.db_creds["password"],
-                database=self.db_creds["dbname"],
-                port=self.db_creds["port"],
-                cursorclass=pymysql.cursors.DictCursor
+        """Establishes or reuses the PostgreSQL connection."""
+        if not self.connection:
+            engine = sqlalchemy.create_engine(
+                f"postgresql+psycopg://{self.db_creds['user']}:{self.db_creds['password']}@{self.db_creds['host']}:{self.db_creds['port']}/{self.db_creds['dbname']}"
             )
+            self.connection = engine.raw_connection()
         return self.connection
+
 
     def execute_query(self, query: str, params: tuple = None, fetch: str = "all"):
         """
@@ -58,6 +57,16 @@ class DBConnector:
     def __enter__(self):
         self.connect()
         return self
-    
-    def __exit__(self, exc_type, exc_value, traceback):       
+
+    def __exit__(self, exc_type, exc_value, traceback):
         self.close()
+
+
+# def test():
+#     db_connector = DBConnector()
+#     with db_connector:
+#         result = db_connector.execute_query("SELECT NOW();", fetch="one")
+#         print("Current Time from DB:", result)
+
+
+# test()
