@@ -14,7 +14,11 @@ dependencies = [
   "seaborn",
   "IPython",
   "ipykernel",
-  "pydantic"
+  "pydantic",
+  "yfinance",
+  "scikit-learn",
+  "joblib",
+  "numpy",
   ]
 
 [project.optional-dependencies]
