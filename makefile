@@ -31,3 +31,6 @@ install-all:
 run:
 	docker compose down
 	docker-compose up -d
+
+blackjack:
+	typer src/etl/notebooks/bored/blackjack.py 

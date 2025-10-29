@@ -1,0 +1,31 @@
+client_id,nom,email,date_inscription,revenu_annuel
+1,Client_1,client1@gmail.com,06/03/2022,
+2,Client_2,client2@gmail.com,15/03/2022,35000
+3,Client_3,client3@gmail.com,08/01/2023,35000
+4,Client_4,client4@gmail.com,28/04/2022,28000€
+5,Client_5,client5@gmail.com,25/09/2022,42 000 €
+6,Client_6,client6@gmail.com,26/03/2023,52000
+7,Client_7,client7@gmail.com,29/10/2022,52000
+8,Client_8,client8@gmail.com,22/08/2022,52000
+9,Client_9,client9@gmail.com,30/08/2022,28000€
+10,Client_10,client10@gmail.com,21/04/2023,28000€
+11,Client_11,client11@gmail.com,17/08/2023,42 000 €
+12,Client_12,client12@gmail.com,20/05/2022,35000
+13,Client_13,client13@gmail.com,16/03/2023,
+14,Client_14,client14@gmail.com,02/02/2023,35000
+15,Client_15,client15@gmail.com,08/11/2023,52000
+1,Client_1,client1@gmail.com,06/03/2022,
+2,Client_2,client2@gmail.com,15/03/2022,35000
+3,Client_3,client3@gmail.com,08/01/2023,35000
+4,Client_4,client4@gmail.com,28/04/2022,28000€
+5,Client_5,client5@gmail.com,25/09/2022,42 000 €
+6,Client_6,client6@gmail.com,26/03/2023,52000
+7,Client_7,client7@gmail.com,29/10/2022,52000
+8,Client_8,client8@gmail.com,22/08/2022,52000
+9,Client_9,client9@gmail.com,30/08/2022,28000€
+10,Client_10,client10@gmail.com,21/04/2023,28000€
+11,Client_11,client11@gmail.com,17/08/2023,42 000 €
+12,Client_12,client12@gmail.com,20/05/2022,35000
+13,Client_13,client13@gmail.com,16/03/2023,
+14,Client_14,client14@gmail.com,02/02/2023,35000
+15,Client_15,client15@gmail.com,08/11/2023,52000

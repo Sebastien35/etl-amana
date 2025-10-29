@@ -19,6 +19,7 @@ dependencies = [
   "scikit-learn",
   "joblib",
   "numpy",
+  "typer"
   ]
 
 [project.optional-dependencies]

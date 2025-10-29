@@ -34,6 +34,36 @@ services:
       - postgres_db # <-- !!!!!
     links: # <-- !!!!!
       - postgres_db # <-- !!!!!
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    ports:
+      - 3306:3306/tcp
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=mydatabase
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+    volumes:
+      - ./mariadb_data:/var/lib/mysql
+    networks:
+      - db_network
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    ports:
+      - 8080:80/tcp
+    environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
+      - PMA_USER=user
+      - PMA_PASSWORD=password
+    networks:
+      - db_network
+    depends_on:
+      - mariadb
+    links:
+      - mariadb 
 
 networks:
   db_network:

@@ -1,0 +1,16 @@
+id_client,nom_client,ville,chiffre_affaires,date_creation
+17,Client_4,Paris,9547.21,2023-10-13
+15,Client_3,Marseille,3022.8,2021-10-24
+5,Client_11,Paris,2484.1,2022-03-20
+6,Client_18,Paris,7221.65,2022-06-26
+11,Client_14,Marseille,6062.34,2023-09-22
+20,Client_15,Marseille,2568.62,2023-08-05
+3,Client_12,,9509.23,2022-11-30
+16,Client_5,Toulouse,3714.65,2022-12-27
+8,Client_17,Toulouse,2333.85,2023-05-13
+10,Client_10,Toulouse,8242.09,2022-02-22
+4,Client_6,Paris,2166.76,2021-07-07
+7,Client_7,Toulouse,5926.0,2022-04-07
+19,Client_20,,5426.38,2021-08-16
+1,Client_9,Toulouse,1620.85,2021-10-26
+18,Client_8,Lyon,9382.1,2024-01-08
