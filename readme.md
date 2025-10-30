@@ -27,3 +27,7 @@ pip install -r requirements-dev.txt
 
 docker compose up -d
 ```
+L'exercice  1 est dans  src/etl/ex1.ipynb
+            2                   ex2_jointures.ipynb
+            3                   ex3_talend.ipynb
+

@@ -1,0 +1,107 @@
+[
+    {
+        "customerID": 13,
+        "full_name": "Client_11",
+        "purchase_date": "08-10-2023",
+        "total_spent": "436.86€",
+        "newsletter_optin": "Yes"
+    },
+    {
+        "customerID": 10,
+        "full_name": "Client_8",
+        "purchase_date": "24-02-2023",
+        "total_spent": "238.32€",
+        "newsletter_optin": ""
+    },
+    {
+        "customerID": 18,
+        "full_name": "Client_18",
+        "purchase_date": "12-01-2023",
+        "total_spent": "92.62€",
+        "newsletter_optin": ""
+    },
+    {
+        "customerID": 21,
+        "full_name": "Client_9",
+        "purchase_date": "07-01-2023",
+        "total_spent": "394.42€",
+        "newsletter_optin": "No"
+    },
+    {
+        "customerID": 9,
+        "full_name": "Client_17",
+        "purchase_date": "22-03-2023",
+        "total_spent": "184.17€",
+        "newsletter_optin": "Yes"
+    },
+    {
+        "customerID": 17,
+        "full_name": "Client_12",
+        "purchase_date": "05-06-2023",
+        "total_spent": "364.92€",
+        "newsletter_optin": "No"
+    },
+    {
+        "customerID": 12,
+        "full_name": "Client_16",
+        "purchase_date": "16-12-2023",
+        "total_spent": "169.02€",
+        "newsletter_optin": ""
+    },
+    {
+        "customerID": 22,
+        "full_name": "Client_14",
+        "purchase_date": "02-08-2023",
+        "total_spent": "329.87€",
+        "newsletter_optin": "No"
+    },
+    {
+        "customerID": 16,
+        "full_name": "Client_6",
+        "purchase_date": "05-07-2023",
+        "total_spent": "230.15€",
+        "newsletter_optin": "No"
+    },
+    {
+        "customerID": 14,
+        "full_name": "Client_24",
+        "purchase_date": "11-11-2023",
+        "total_spent": "497.69€",
+        "newsletter_optin": ""
+    },
+    {
+        "customerID": 6,
+        "full_name": "Client_21",
+        "purchase_date": "11-12-2023",
+        "total_spent": "287.13€",
+        "newsletter_optin": "Yes"
+    },
+    {
+        "customerID": 24,
+        "full_name": "Client_23",
+        "purchase_date": "10-12-2023",
+        "total_spent": "136.66€",
+        "newsletter_optin": ""
+    },
+    {
+        "customerID": 5,
+        "full_name": "Client_19",
+        "purchase_date": "20-12-2023",
+        "total_spent": "64.91€",
+        "newsletter_optin": ""
+    },
+    {
+        "customerID": 7,
+        "full_name": "Client_13",
+        "purchase_date": "16-07-2023",
+        "total_spent": "265.94€",
+        "newsletter_optin": "No"
+    },
+    {
+        "customerID": 8,
+        "full_name": "Client_22",
+        "purchase_date": "01-11-2023",
+        "total_spent": "176.28€",
+        "newsletter_optin": "No"
+    }
+]

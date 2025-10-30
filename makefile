@@ -1,6 +1,6 @@
 .PHONY: requirements
 requirements: ## Builds Python production requirements.
-	venv/bin/python -m pip install pip-tools --upgrade
+	venv/bin/python -m pip install "pip<25" "pip-tools<7.6" --upgrade --force-reinstall
 	venv/bin/pip-compile \
 		--allow-unsafe \
 		--strip-extras \
@@ -10,7 +10,7 @@ requirements: ## Builds Python production requirements.
 
 .PHONY: requirements-dev
 requirements-dev: ## Builds Python development requirements.
-	venv/bin/python -m pip install pip-tools --upgrade
+	venv/bin/python -m pip install "pip<25" "pip-tools<7.6" --upgrade --force-reinstall
 	venv/bin/pip-compile \
 		--allow-unsafe \
 		--strip-extras \
@@ -22,6 +22,7 @@ requirements-dev: ## Builds Python development requirements.
 
 .PHONY: requirements-all
 requirements-all: requirements requirements-dev ## Builds all Python requirements files.
+
 
 install-all:
 	rm -rf venv
